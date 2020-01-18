@@ -1,14 +1,14 @@
 /* liststyle */
     .listStyle .container {max-width: 1000px; margin: 30px auto; }
-    .listStyle ul {display: flex; justify-content: flex-end;}
+    .listStyle ul {display: flex; justify-content: flex-end; padding-right: 10px;}
     .listStyle li {margin-left: 15px;}
     .listStyle i {font-size: 25px; opacity: 0.5;}
-    .listStyle i:hover {cursor: pointer;}
+    .listStyle i:hover {cursor: pointer; opacity: 0.3;}
 
 /* listA */
     .listA .container {display: flex; flex-wrap: wrap; max-width: 1000px; margin: 30px auto;} /* flex-wrap: wrap - break items into multiple lines. */
     .listA article {flex: 1 1 300px;/* item의 길이가 300px을 넘어서는 순간 line break된다. */ display: flex;}
-    .listA a {flex: 1;/* article 내부의 a 길이 일정하게 맞춰주기 */ display: block; border: 1px solid #ddd; color: inherit; text-decoration: none; margin: 10px; padding: 2px;} /* span: 이미지와 글자 위에 정확하게 커서를 올려야 링크 가능. block: 여백에 올려도 가능. */
+    .listA a {flex: 1;/* article 내부의 a 길이 일정하게 맞춰주기 */ display: block; border: 1px solid #ddd; color: inherit; text-decoration: none; margin: 2px; padding: 2px;} /* span: 이미지와 글자 위에 정확하게 커서를 올려야 링크 가능. block: 여백에 올려도 가능. */
         .listA a:hover {opacity: .8;}
     .listA .photo {min-height: 150px; background-position: center; background-size: cover;}
     .listA .text {margin: 10px; word-break: keep-all;}
@@ -18,7 +18,7 @@
 /* listB */
     .listB .container {display: flex; flex-wrap: wrap; max-width: 1000px; margin: 30px auto;} /* flex-wrap: wrap - break items into multiple lines. */
     .listB article {flex: 1 1 384px;/* item의 길이가 300px을 넘어서는 순간 line break된다. */ display: flex;}
-    .listB a {flex: 1;/* article 내부의 a 길이 일정하게 맞춰주기 */ display: block; border: 1px solid #ddd; color: inherit; text-decoration: none; margin: 10px; padding: 2px; display: flex;} /* span: 이미지와 글자 위에 정확하게 커서를 올려야 링크 가능. block: 여백에 올려도 가능. */
+    .listB a {flex: 1;/* article 내부의 a 길이 일정하게 맞춰주기 */ display: block; border: 1px solid #ddd; color: inherit; text-decoration: none; margin: 2px; padding: 2px; display: flex;} /* span: 이미지와 글자 위에 정확하게 커서를 올려야 링크 가능. block: 여백에 올려도 가능. */
         .listB a:hover {opacity: .8;}
     .listB .photo {flex:2; min-height: 150px; background-position: center; background-size: cover;}
     .listB .text {flex:3; margin: 10px; word-break: keep-all;}
@@ -37,4 +37,4 @@
          -0.5px 0.5px 0 #000,
           0.5px 0.5px 0 #000;} /* An absolute positioned element is relative to the next parent element with 'position:relative'. If there is no such parent, it will default all the way up to the <html> element. */ 
         .listC h2 {font-size: 18px; line-height: 1.5;}
-        .listC p {font-size: 14px; margin-top: 10px; line-height: 1.5; color: #dadada}
+        .listC p {font-size: 14px; margin-top: 10px; line-height: 1.5; color: #e7e7e7}

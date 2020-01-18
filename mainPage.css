@@ -40,6 +40,7 @@ body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizin
         .headB {display: block !important;} /* 토글 버튼으로 메뉴를 열고 닫다가 화면을 키우면 큰 화면에서 내비게이션 메뉴가 안 보일 수 있다. !important는 우선적으로 적용시킨다. */ 
         .headB ul {display: flex;}
         .headC {display: none;}
+        .headB {font-weight: bold;}
         .headB a:hover {opacity: .8;}
     }
 
