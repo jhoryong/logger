@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="subPage.css">
+    <link rel="stylesheet" href="contents.css">
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/296406b34b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Logger</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class="headA"><img src="img/logo.svg" alt=""></a>
+                <button type="button" class="headC"><i class="fas fa-bars" title="MENU"></i></button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="about.html">소개</a></li>
+                    <li><a href="contents.html">콘텐츠</a></li>
+                    <li><a href="contact.html">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="listA">
+        <div class="container">
+            <article>
+                <a href="startLogger.html">
+                    <div class="photo" style="background-image: url(img/p07.jpg);"><!--style속성을 HTML에 적는 이유는 개요의 수를 늘렸을 때 문장과 함께 이미지를 쉽게 관리할 수 있게 하기 위함.-->
+                    </div>
+                    <div class="text">
+                        <h2>라이프로그 시작하기</h2>
+                        <p>일상 생활을 기록해서 데이터로 남기는 것을 "라이프로그"라고 합니다.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p08.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>라이프로그 사용법</h2>
+                        <p>라이프로그를 쉽게 빠르게 배워보자. 설정, 관리, 연동 등 활용 100% 하는 법.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p01.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>꽃으로 실내 정원 만들기</h2>
+                        <p>적은 돈으로도 집안 분위기를 180도 바꿔줄 꽃테리어.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p02.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>채소 일지</h2>
+                        <p>채소는 직접 키워 먹어야 제맛! 제가 한번 길러보았습니다.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p03.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>딸기마스터</h2>
+                        <p>딸기볶음밥, 가능?</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p04.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>쌩초보 작곡 배우기</h2>
+                        <p>작곡의 세계에 빠졌습니다. 쌩초보의 작곡 여행.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p05.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>일상속의 예술</h2>
+                        <p>일상 속의 문양들을 탐구하다.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p06.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>식물에 설탕물을 부우면 어떻게 될까?</h2>
+                        <p>직접 실험해보았습니다.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p09.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>해외에서 살아남기</h2>
+                        <p>녹록지만은 않다. 그래도 좋다. 이불 밖 뛰쳐나가기 프로젝트.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p10.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>인간 드론이 되어보자</h2>
+                        <p>패러글라이딩의 매력은 바로 이것입니다.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p11.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>경력 5년차 헬린이의 샐러드 제조법</h2>
+                        <p>지구상의 모든 샐러드를 다 만들어 보았습니다.</p>
+                    </div>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <div class="photo" style="background-image: url(img/p12.jpg);">
+                    </div>
+                    <div class="text">
+                        <h2>철판은 이런 것이다.</h2>
+                        <p>오래된 친구에게 뜬금없이 전화해서 철판구이 얻어먹기 도전.</p>
+                    </div>
+                </a>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footA">
+                <h2><img src="img/logo.svg" alt="">LOGGER</h2>
+                <p>주식회사 로거</p>
+                <p>대표자 : 정호룡</p>
+                <p>사업자등록번호 : 821090737012</p><br>
+                <p>주소 : (17073)경기도 용인시 기흥구<br>금화로11번길 15</p>
+                <p>이메일 : <a href="mailto:jhoryong@gmail.com">jhoryong@gmail.com</a></p>
+                <p>연락처 : <a href="tel:821090737012">010-9073-7012</a></p>
+            </div>
+            <nav class="footB">
+                <div>
+                    <h3>소개</h3>
+                    <ul>
+                        <li><a href="#">LOGGER란?</a></li>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">인재 채용</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>지원</h3>
+                    <ul>
+                        <li><a href="#">다운로드</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>커뮤니티</h3>
+                    <ul>
+                        <li><a href="#">LOGGER 커뮤니티</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">개발자</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>미디어</h3>
+                    <nav class="footD">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+                            <!--SNS메뉴의 아이콘은 장식적인 것이 아니라 내비게이션의 역할을 하는 것이기 때문에 내용을 스크린 리더에 전달하는 것이 좋다. 
+                                아이콘의 내용을 전달할 대체 글자를 title 속성에 입력하면 Font Awesome은 이를 인식하여 aria-hidden: "true" attribute과 <span class="sr-only">로 마크업되어 있는 대체 글자를 추가한다.
+                                브라우저 화면에서는 표시되지 않지만, 환경에 따라 아이콘 폰트를 읽어들일 때까지 잠시 대체 글자가 화면에 표시되는 경우가 있다. 이를 막으려면 <style>을 추가하고 .sr-only 설정을 입력한다.
+                            -->
+                            <li><a href="#"><i class="fab fa-facebook" title="Facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" title="Instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube" title="YouTube"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+            <div class="footC">
+                © LOGGER corp. All rights reserved.
+            </div>
+        </div>
+    </footer>
+<script>
+    $('.headC').click(function() {
+        $('header').toggleClass('backgroundColor');
+        $('.headB').fadeToggle();
+    });
+</script>
+</body>
+</html>

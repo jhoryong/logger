@@ -1,0 +1,67 @@
+
+
+/* Header */
+    header {position: static; border-bottom: 1px solid #ddd; border-bottom: 1px solid var(--gray-color); background: url(img/balloon.jpg); background-position: center; background-size: cover;}
+
+    @media (max-width: 768px) {
+        header.backgroundColor {background-color: rgba(0,0,0,0.1);}
+    }
+
+/* Contents Page */
+
+
+    .post .container {padding: 50px 10px; max-width: 800px; max-width: var(--middle-width);  margin-left: auto; margin-right: auto;}
+    .post h1 {margin-bottom: 1.5rem; font-size: 1.6rem; line-height: 1.5; border-left: solid .75rem #FDD20E; border-left: solid .75rem var(--color1); padding-left: 1rem;}
+    .post img {max-width: 100%;} /* width가 아니라 max-width를 100%로 지정하면 기사의 너비가 이미지보다 작을 때 이미지 크기를 축소한다. 반면 기사의 너비가 원래 이미지보다 크면 원래 이미지 크기로 출력한다. */
+    .post p {margin-top: 1.2rem; margin-bottom: 1.2rem; font-size: 0.9rem; line-height: 2; word-break: keep-all;} /* rem은 root em 으로, root 요소의 폰트 크기에 대한 비율로 크기를 지정 하는 단위이다. */
+    
+    /* Breadcrumb */
+        .bread {margin-bottom: 2rem;}
+        .bread ol {display: flex;}
+        .bread a {color: inherit; font-size: 0.875rem; text-decoration: none;}
+        .bread a:hover {opacity: 0.5;}
+        .bread i {opacity: 0.3; margin-left: 10px; margin-right: 10px; font-size: .8rem;}
+        .bread i:first-child {color: #000; opacity: 1; margin-left: 0; margin-right: 0;}
+
+
+/* About Page*/
+    .history .container {background-color: rgba(223, 223, 223, 0.3); padding: 20px; }
+    .history .text {padding: 20px; word-break: keep-all;}
+    .history h2 {margin-bottom: 10px; font-size: 1.5rem; line-height: 1.5; font-weight: bold;}
+    .history .photo {min-height: 300px; background-image:url(img/p07.jpg); background-position: center; background-size: cover;}
+    .history table {border-collapse: collapse; border-top: 1px solid #ddd; font-size: 0.875rem;} /* border-collapse: collapse - table의 cell 사이의 여백을 없앤다. */
+    .history th, .history td {border-bottom: 1px solid #ddd; padding-top: 1.8rem; padding-bottom: 1.8rem;}
+    .history th {white-space: nowrap; word-break: keep-all; padding-right: 1rem; font-weight: bold; text-align: left;/* th 내부의 글자는 기본적으로 중앙 정렬된다. */}
+    .history td {line-height: 1.8;}
+    @media (min-width: 768px) {
+        .history .container {display: flex; max-width: 1000px; max-width: var(--max-width); margin-left: auto; margin-right: auto; margin-bottom: 20px;}
+        .history .photo {flex: 5;}
+        .history .text {flex: 4; padding: 20px 50px;}
+    }
+
+/* Contacts Page */
+    .contact {padding: 20px; margin-top: 20px; margin-bottom: 20px; border: solid 1px #ddd; text-align: center;}
+    .contact i {
+        margin-bottom: 20px;
+        font-size: 2.2rem;
+        width: 2em;
+        line-height: 2em; /* icon을 vertical center으로 맞추기 위해 line height을 사용한다. */
+        border-radius: 50%; /* 둥굴기를 너비와 높이의 절반으로 설정하면 완전한 원을 만들 수 있다. */
+        text-align: center;
+        color: #fff;
+        background-color: #FDD20E;
+    }
+    .contact h2 {font-size: 1.2rem; font-weight: bold;}
+    .contact a {display: inline-block; font-size: 1rem; text-decoration: none; color: inherit; margin-top: 1rem; }
+    .contact a:hover {opacity: 0.6;}
+    .location iframe {width: 100%; height: 400px; vertical-align: bottom;/* 의도하지 않은 아래 여백을 없앰. */}
+    .location h2 {background-color: #FDD20E; background-color: var(--color1); padding-top: 20px; padding-bottom: 20px; color: #fff;  text-align: center; font-size: 1.2rem;}
+    .location h2:hover {color: #FDD20E; background-color: #fff;}
+
+    @media (min-width: 768px) {
+        .contact-wrap {display: flex;}
+        .contact {flex:1;}
+        .contact:first-child {margin-right: 20px;}
+        .location iframe, .location h2 {display: block; max-width: 1000px; margin-right: auto; margin-left: auto;}
+        .location iframe {height: 600px; margin-bottom: 70px;}
+    }

@@ -1,0 +1,237 @@
+@charset "UTF-8";
+
+/* 기본 색 */
+:root {
+    --color1: #FDD20E;
+    --color2: #F93822FF; /* accent: 강조 */
+    --dark-color: rgb(23, 50, 59);
+    --color3: #5D9AB2;
+
+    --text-bright-color: #fff;
+    --button-color: #FDD20E;
+    --button-text-color: #000;
+    --icon-color: #FDD20E;
+    --icon-bk-color: #fff;
+    --light-bk-color: rgba(255, 255, 255, 0.8);
+    --gray-color: #ddd;
+
+    --max-width: 1000px;
+    --middle-width: 800px;
+}
+
+/* 기본 설정 */
+body {font-family: 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizing: border-box;} /* border box는 요소의 padding과 border을 모두 포함한 값을 요소의 width, height에 포함하므로 보기가 편하다. */
+
+    /* 폰트 크기 */
+    @media (max-width: 559px) {:root {font-size: 14px;}}
+    @media (min-width: 600px) and (max-width: 799px) {:root {font-size: 16px;}}
+    @media (min-width: 800px) {:root {font-size: 18px;}}
+    body {font-size: 16px;} /* 브라우저의 기본 폰트 크기는 16px이다. */
+
+/* header */
+    header {position: absolute; top: 0; left: 0; z-index: 100; width:100%;}
+    
+    .headA {width: 60px; height: 60px; display: inline-block; padding: 20px; } /* IE에서는 svg width, height 모두 설정해야 정상적으로 출력된다. svg에 inline-block을 적용시키지 않으면 사이즈가 제멋대로 바뀐다. */ 
+    .headA img:hover {opacity: 0.6;}
+    .headB a {color: #fff; color: val(--text-bright-color); font-size: 15px; text-decoration: none; display: block; padding: 15px; }/* inline element의 padding과 margin은 top, bottom 에 적용이 안된다. */
+
+    @media (min-width: 768px) {
+        header .container {display: flex; align-items: center; justify-content: space-between; max-width: 1000px; max-width: val(--max-width); margin-left: auto; margin-right: auto;}
+        .headB {display: block !important;} /* 토글 버튼으로 메뉴를 열고 닫다가 화면을 키우면 큰 화면에서 내비게이션 메뉴가 안 보일 수 있다. !important는 우선적으로 적용시킨다. */ 
+        .headB ul {display: flex;}
+        .headC {display: none;}
+        .headB a:hover {opacity: .8;}
+    }
+
+    @media (max-width: 768px) {
+        header {transition: all 400ms;}
+        header .container-small {display: flex; align-items: center; justify-content: space-between;}
+        .headB {display: none;}
+        .headB a:hover {background-color:rgba(0, 0, 0, 0.3);}
+        .headC {margin-right: 20px; padding: 0; border: none; background: none; font-size: 30px; color:#fff; cursor: pointer;}
+        .headC:hover {opacity: 0.8;}
+        .headC:focus {opacity: 0.8;}
+        header.backgroundColor {background-color: rgba(0,0,0,0.6); transition: all 400ms;}
+    }
+
+    
+
+/* conA (히어로 이미지)*/
+    .conA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 100vh; /* 히어로 이미지가 화면 전체를 채우도록 한다. */
+        min-height: 450px; /* 비현실적이지만 브라우저의 높이가 글자영역보다 작을 경우 빈 영역이 생기므로 min-height을 설정한다. */
+
+        text-align: center;
+
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/balloon.jpg); /* 앞에 지정한 이미지가 위로 올라간다 */
+        background-position: center; /* .conA 박스에 맞게 자동으로 확대/축소되며, 이를 처리하는 중심점을 중앙으로 지정 */
+        background-size: cover; /* cover - 이미지가 영역을 가로로 꽉 채우도록 한다. stretch 되거나 cut 될수도 있다. contain - 이미지가 영역을 세로로 꽉 채우도록 하며, stretch/cut되지 않는다.*/
+        color: #fff;
+        color: var(--text-bright-color);
+    }
+    .conA h1 {
+        font-size: 15vw;/* 화면의 폭이 320px 일 때, 15vw = 48px */
+        margin-bottom: 30px;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 0.15em; /* 폰트 크기 = 1em. 반응형으로 달라짐.*/
+        margin-left: 0.15em; /* letter spacing으로 인해 마지막 글자에도 0.2em의 여백이 들어갔으므로, 균형을 맞춰주기 위해 끝에 0.2em의 margin을 삽입. */
+    }
+    .conA .line {display: inline-block; width: 55vw; border-top: 2px solid #fff; margin-bottom: 40px;}
+    .conA p {font-size: 18px;} /* 모바일에서의 글자 크기를 고려하여 설정했다. Mobile First. */
+    .conA img {width: 20%;} /* 부모 요소(container) 너비의 20%로 설정. */
+    .conA a {
+        display: inline-block; /* a 같은 inline 요소(내용의 크기에 맞게 크기가 결정됨)는 위아래 margin이 출력되지 않기 때문에 inline-block 으로 바꿔준다. */
+        margin-top: 50px;
+        padding: 15px 30px;
+        /* border: solid 3px currentColor;  currentColor: 글자와 같은 색상 */
+        /* border-radius: 6px; */
+        background-color: #FDD20E;
+        background-color: var(--button-color);
+        color: #000;
+        color: var(--button-text-color);
+        font-size: 14px;
+        text-decoration: none;
+    }
+        .conA a:hover {background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));}
+
+    @media (min-width: 768px /* iPad의 폭 = 768px */) {
+        .conA h1 {font-size: 115px;}/* 768px의 15vw = 115.2px */
+        .conA .line {width: 422.4px;}
+        .conA p {font-size: 24px;}
+    }
+
+/* conB (개요: 아이콘 + 글자) */
+    .conB {/*background-color: var(--color1);*/
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/fruits.jpg); /* 앞에 지정한 이미지가 위로 올라간다 */
+        background-position: center; /* .conA 박스에 맞게 자동으로 확대/축소되며, 이를 처리하는 중심점을 중앙으로 지정 */
+        background-size: cover; /* cover - 이미지가 영역을 가로로 꽉 채우도록 한다. stretch 되거나 cut 될수도 있다. contain - 이미지가 영역을 세로로 꽉 채우도록 하며, stretch/cut되지 않는다.*/}
+    .conB .container {padding: 1px 15px; max-width: 1000px; max-width: var(--max-width); margin-left: auto; margin-right: auto;}
+    .conB .text {text-align: center; padding: 60px 30px; margin: 30px 15px;  word-break: keep-all; background-color: rgba(255, 255, 255, 0.8);; background-color: var(--light-bk-color);} /* work-break: keep-all은 CJK언어의 단어 사이 줄바꿈을 금지한다. */
+    .conB h2 {margin-bottom: 10px; font-size: 20px; line-height: 1.5;}
+    .conB p {margin-bottom: 20px; font-size: 14px; line-height: 1.8; opacity: 0.8;}
+    .conB a {color: inherit; text-decoration: none; opacity: 0.8;}
+    .conB a:hover{color:#FDD20E; color:var(--color1); text-decoration: none; transition: all 300ms;}
+    .conB .icon {
+        margin-bottom: 20px;
+        font-size: 40px;
+        width: 2em;
+        line-height: 2em; /* icon을 vertical center으로 맞추기 위해 line height을 사용한다. */
+        border-radius: 50%; /* 둥굴기를 너비와 높이의 절반으로 설정하면 완전한 원을 만들 수 있다. */
+        text-align: center;
+        color: #FDD20E;
+        color: var(--icon-color);
+        background-color: rgba(255, 255, 255, 0.8);
+        background-color: var(--icon-bk-color);
+    }
+    .conB .icon:hover {
+        background-color: #FDD20E;
+        background-color: var(--icon-color);
+        color: rgba(255, 255, 255, 0.8);
+        color: var(--icon-bk-color);
+    }
+    @media (min-width: 768px) {
+        /* .conB {height: 100vh; display: flex;} */
+        .conB .container {display: flex; /*align-self: center;*/ padding-top: 150px; padding-bottom: 150px;}
+        /* align-content vs align-items vs align-self
+        1. align-content : 2줄 이상의 flex items에 사용
+        2. align-items: : 1줄의 flex items에 사용
+        3. align-self : 개별 flex item에 사용
+        */
+        .conB .text {flex: 1;}
+        /* flex: 1; 의 뜻:
+            "flex item의 비율을 1로 맞추어 주세요",
+            flex-grow: 1; (default: 0)
+            flex-shrink: 1; (default: 1)
+            flex-basis: 0; (default: auto)
+
+            flex-basis: 0; vs flex-basis: auto;
+            - flex-basis: 0; = item의 original size를 고려하지 않음.
+            - flex-bases: auto; = item의 original size를 고려함.
+         */
+    }
+
+/* conCD */
+    .conCD .container {background-color: rgba(223, 223, 223, 0.3); padding: 20px; }
+    .conCD .photo {min-height: 250px; background-position: center; background-size: cover;}
+    .conCD .text {padding: 20px; word-break: keep-all;}
+    .conCD h2 {margin-bottom: 10px; font-size: 20px; line-height: 1.5;}
+    .conCD p {margin-bottom: 20px; font-size: 14px; line-height: 1.8; opacity: 0.8;}
+    .conCD a {
+        display: inline-block; /* a 같은 inline 요소(내용의 크기에 맞게 크기가 결정됨)는 위아래 margin이 출력되지 않기 때문에 inline-block 으로 바꿔준다. */
+        margin-bottom: 20px;
+        padding: 15px 30px;
+        /* border: solid 3px currentColor;  currentColor: 글자와 같은 색상 */
+        /* border-radius: 6px; */
+        background-color:#FDD20E;
+        background-color: var(--button-color);
+        color: #000;
+        color: var(--button-text-color);
+        font-size: 14px;
+        text-decoration: none;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+        .conCD a:hover {background-image: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2));}
+
+    @media (min-width: 768px) {
+        .conCD {padding-top: 20px;}
+        /* .conCD {height: 100vh; display: flex; flex-direction: column; justify-content: space-evenly;} */
+        .conCD .container {display: flex; max-width: 1000px; max-width: var(--max-width); margin-left: auto; margin-right: auto; margin-bottom: 20px;}
+        .conCD .photo {flex: 5;}
+        .conCD .text {flex: 4; padding: 50px;}
+    }
+
+    /* conC (개요: 이미지 + 글자) */
+        .conC .photo {background-image: url(img/p10.jpg);}
+        
+    /* conD (개요: 이미지 + 글자) */
+        .conD .photo {background-image: url(img/p12.jpg);}
+
+/* Footer */
+    footer {color: #fff; color: var(--text-bright-color); background-color: rgb(23, 50, 59); background-color: var(--dark-color);}
+    footer .container {padding: 40px 20px;}
+
+    @media (min-width: 768px) {
+        footer .container {display: flex; flex-wrap: wrap; max-width: 1000px; max-width: var(--max-width); margin-left: auto; margin-right: auto;} /* flex-wrap: nowrap, wrap, wrap-reverse. default는 nowrap이며 줄바꿈을 하지 않는다.*/
+        .footA {flex: 0 0 30%;}
+        .footB {flex: 0 0 70%;}
+        .footC {flex: 0 0 100%;}
+    }
+
+    /* footA */
+        .footA {margin-bottom: 30px;}
+        .footA img {width: 30px; height: 30px; vertical-align: middle; margin-right: 0.15em;} /* IE에서는 svg width, height 모두 설정해야 정상적으로 출력된다.  */ 
+        .footA h2 {font-size: 30px; font-family: 'Montserrat', sans-serif; letter-spacing: 0.15em; /* 폰트 크기 = 1em. 반응형으로 달라짐.*/}
+        .footA p {font-size: 12px; line-height: 1.5;}
+        .footA p:first-of-type {margin-top: 10px;}
+        .footA a {color: inherit; text-decoration: none;}
+        .footA a:hover {opacity: .8;}
+
+    /* footB */
+        .footB div {margin-bottom: 20px;}
+        .footB h3 {font-size: 14px; margin-bottom: 10px; line-height: 1.5; font-weight: bold;}
+        .footB li {line-height: 1.5;}
+        .footB a {color: inherit; font-size: 12px; text-decoration: none;}
+            .footB a:hover {opacity: 0.8;}
+
+    /* footC */
+        .footC {font-size: 12px; text-align: center; padding-top: 20px;}
+    
+    @media (min-width: 768px) {
+        .footB {display: flex;}
+        .footB div {flex: 1;}
+        .footB div:not(:first-child) {margin-left: 40px;} /* :not() - () 내부의 지정한 조건과 일치하지 않는 요소가 선택됨. */
+    }
+
+    /* footD */
+        .footD ul {display: flex; margin-top: 10px;}
+        .footD i {font-size: 20px; margin-right: 10px;}
+        .footD a:hover {opacity: 0.8;}
+
+        
+        

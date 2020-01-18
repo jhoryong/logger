@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="mainPage.css">
+    <link rel="stylesheet" href="subPage.css">
+
+    <style>
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0,0,0,0);
+            border: 0;
+        }
+    </style>
+
+    <script src="https://kit.fontawesome.com/296406b34b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Logger</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="container-small">
+                <a href="index.html" class="headA"><img src="img/logo.svg" alt=""></a>
+                <button type="button" class="headC"><i class="fas fa-bars" title="MENU"></i></button>
+            </div>
+            <nav class="headB">
+                <ul>
+                    <li><a href="about.html">소개</a></li>
+                    <li><a href="contents.html">콘텐츠</a></li>
+                    <li><a href="contact.html">문의</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <article class="post">
+        <div class="container">
+            <h1>로거란?</h1>
+            <p>로거는 라이프로그와 관련된 정보 제공, 애플리케이션 개발, 사용자 지원 등을 위해 설립된 기업입니다. 라이프로그 서비스는 사용자가 일상 생활을 더 열심히 즐길 수 있게 하는 것을 목표로 하고 있습니다.</p>
+            <p>최근에는 국외 데이터 센터를 활용해 국내 뿐만 아니라 해외에도 서비스를 제공하고 있습니다.</p>
+        </div>
+    </article>
+    <aside class="history"> <!--aside tag는 부가적인 정보를 나타낸다.-->
+        <div class="container">
+            <div class="photo"></div>
+            <div class="text">
+                <h2>로거의 역사</h2>
+                <table>
+                    <tr>
+                        <th>2010년 4월</th>
+                        <td>LOGGER 설립</td>
+                    </tr>
+                    <tr>
+                        <th>2012년 6월</th>
+                        <td>온라인 매거진 창간</td>
+                    </tr>
+                    <tr>
+                        <th>2014년 12월</th>
+                        <td>해외 기업과의 제휴를 통한 온라인 데이터 공유 서비스 시작</td>
+                    </tr>
+                    <tr>
+                        <th>2015년 5월</th>
+                        <td>라이프로그 서비스 시작</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </aside>
+    <footer>
+        <div class="container">
+            <div class="footA">
+                <h2><img src="img/logo.svg" alt="">LOGGER</h2>
+                <p>주식회사 로거</p>
+                <p>대표자 : 정호룡</p>
+                <p>사업자등록번호 : 821090737012</p><br>
+                <p>주소 : (17073)경기도 용인시 기흥구<br>금화로11번길 15</p>
+                <p>이메일 : <a href="mailto:jhoryong@gmail.com">jhoryong@gmail.com</a></p>
+                <p>연락처 : <a href="tel:821090737012">010-9073-7012</a></p>
+            </div>
+            <nav class="footB">
+                <div>
+                    <h3>소개</h3>
+                    <ul>
+                        <li><a href="#">LOGGER란?</a></li>
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">인재 채용</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>지원</h3>
+                    <ul>
+                        <li><a href="#">다운로드</a></li>
+                        <li><a href="#">매뉴얼</a></li>
+                        <li><a href="#">자주 묻는 질문</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>커뮤니티</h3>
+                    <ul>
+                        <li><a href="#">LOGGER 커뮤니티</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">개발자</a></li>
+                        <li><a href="#">블로그</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>미디어</h3>
+                    <nav class="footD">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-twitter" title="Twitter"></i></a></li>
+                            <!--SNS메뉴의 아이콘은 장식적인 것이 아니라 내비게이션의 역할을 하는 것이기 때문에 내용을 스크린 리더에 전달하는 것이 좋다. 
+                                아이콘의 내용을 전달할 대체 글자를 title 속성에 입력하면 Font Awesome은 이를 인식하여 aria-hidden: "true" attribute과 <span class="sr-only">로 마크업되어 있는 대체 글자를 추가한다.
+                                브라우저 화면에서는 표시되지 않지만, 환경에 따라 아이콘 폰트를 읽어들일 때까지 잠시 대체 글자가 화면에 표시되는 경우가 있다. 이를 막으려면 <style>을 추가하고 .sr-only 설정을 입력한다.
+                            -->
+                            <li><a href="#"><i class="fab fa-facebook" title="Facebook"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram" title="Instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube" title="YouTube"></i></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </nav>
+            <div class="footC">
+                © LOGGER corp. All rights reserved.
+            </div>
+        </div>
+    </footer>
+<script>
+    $('.headC').click(function() {
+        $('.headB').slideToggle();
+    });
+</script>
+</body>
+</html>
