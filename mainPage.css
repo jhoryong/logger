@@ -20,7 +20,7 @@
 }
 
 /* 기본 설정 */
-body {font-family: 'Noto Sans KR', '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizing: border-box;} /* border box는 요소의 padding과 border을 모두 포함한 값을 요소의 width, height에 포함하므로 보기가 편하다. */
+body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizing: border-box;} /* border box는 요소의 padding과 border을 모두 포함한 값을 요소의 width, height에 포함하므로 보기가 편하다. */
 
     /* 폰트 크기 */
     @media (max-width: 559px) {:root {font-size: 14px;}}
