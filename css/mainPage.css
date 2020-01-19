@@ -68,7 +68,7 @@ body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizin
 
         text-align: center;
 
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/balloon.jpg); /* 앞에 지정한 이미지가 위로 올라간다 */
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/balloon.jpg); /* 앞에 지정한 이미지가 위로 올라간다 */
         background-position: center; /* .conA 박스에 맞게 자동으로 확대/축소되며, 이를 처리하는 중심점을 중앙으로 지정 */
         background-size: cover; /* cover - 이미지가 영역을 가로로 꽉 채우도록 한다. stretch 되거나 cut 될수도 있다. contain - 이미지가 영역을 세로로 꽉 채우도록 하며, stretch/cut되지 않는다.*/
         color: #fff;
@@ -107,7 +107,7 @@ body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizin
 
 /* conB (개요: 아이콘 + 글자) */
     .conB {/*background-color: var(--color1);*/
-        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(img/fruits.jpg); /* 앞에 지정한 이미지가 위로 올라간다 */
+        background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(../img/fruits.jpg); /* 앞에 지정한 이미지가 위로 올라간다 */
         background-position: center; /* .conA 박스에 맞게 자동으로 확대/축소되며, 이를 처리하는 중심점을 중앙으로 지정 */
         background-size: cover; /* cover - 이미지가 영역을 가로로 꽉 채우도록 한다. stretch 되거나 cut 될수도 있다. contain - 이미지가 영역을 세로로 꽉 채우도록 하며, stretch/cut되지 않는다.*/}
     .conB .container {padding: 1px 15px; max-width: 1000px; max-width: var(--max-width); margin-left: auto; margin-right: auto;}
@@ -188,10 +188,10 @@ body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; box-sizin
     }
 
     /* conC (개요: 이미지 + 글자) */
-        .conC .photo {background-image: url(img/p10.jpg);}
+        .conC .photo {background-image: url(../img/p10.jpg);}
         
     /* conD (개요: 이미지 + 글자) */
-        .conD .photo {background-image: url(img/p12.jpg);}
+        .conD .photo {background-image: url(../img/p12.jpg);}
 
 /* Footer */
     footer {color: #fff; color: var(--text-bright-color); background-color: rgb(23, 50, 59); background-color: var(--dark-color);}

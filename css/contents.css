@@ -1,16 +1,16 @@
 /* photos */
-    article:nth-child(1) .photo {background-image: url(img/p07.jpg);}
-    article:nth-child(2) .photo {background-image: url(img/p08.jpg);}
-    article:nth-child(3) .photo {background-image: url(img/p01.jpg);}
-    article:nth-child(4) .photo {background-image: url(img/p02.jpg);}
-    article:nth-child(5) .photo {background-image: url(img/p03.jpg);}
-    article:nth-child(6) .photo {background-image: url(img/p04.jpg);}
-    article:nth-child(7) .photo {background-image: url(img/p05.jpg);}
-    article:nth-child(8) .photo {background-image: url(img/p06.jpg);}
-    article:nth-child(9) .photo {background-image: url(img/p09.jpg);}
-    article:nth-child(10) .photo {background-image: url(img/p10.jpg);}
-    article:nth-child(11) .photo {background-image: url(img/p11.jpg);}
-    article:nth-child(12) .photo {background-image: url(img/p12.jpg);} 
+    article:nth-child(1) .photo {background-image: url(../img/p07.jpg);}
+    article:nth-child(2) .photo {background-image: url(../img/p08.jpg);}
+    article:nth-child(3) .photo {background-image: url(../img/p01.jpg);}
+    article:nth-child(4) .photo {background-image: url(../img/p02.jpg);}
+    article:nth-child(5) .photo {background-image: url(../img/p03.jpg);}
+    article:nth-child(6) .photo {background-image: url(../img/p04.jpg);}
+    article:nth-child(7) .photo {background-image: url(../img/p05.jpg);}
+    article:nth-child(8) .photo {background-image: url(../img/p06.jpg);}
+    article:nth-child(9) .photo {background-image: url(../img/p09.jpg);}
+    article:nth-child(10) .photo {background-image: url(../img/p10.jpg);}
+    article:nth-child(11) .photo {background-image: url(../img/p11.jpg);}
+    article:nth-child(12) .photo {background-image: url(../img/p12.jpg);} 
 
 /* liststyle */
     .listStyle .container {max-width: 1000px; margin: 30px auto; }
@@ -60,15 +60,15 @@
         .listC p {font-size: 14px; margin-top: 10px; line-height: 1.5; color: #e7e7e7}
 
     /* photos */
-        .listC article:nth-child(1) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p07.jpg);}
-        .listC article:nth-child(2) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p08.jpg);}
-        .listC article:nth-child(3) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p01.jpg);}
-        .listC article:nth-child(4) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p02.jpg);}
-        .listC article:nth-child(5) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p03.jpg);}
-        .listC article:nth-child(6) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p04.jpg);}
-        .listC article:nth-child(7) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p05.jpg);}
-        .listC article:nth-child(8) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p06.jpg);}
-        .listC article:nth-child(9) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p09.jpg);}
-        .listC article:nth-child(10) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p10.jpg);}
-        .listC article:nth-child(11) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p11.jpg);}
-        .listC article:nth-child(12) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p12.jpg);} 
+        .listC article:nth-child(1) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p07.jpg);}
+        .listC article:nth-child(2) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p08.jpg);}
+        .listC article:nth-child(3) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p01.jpg);}
+        .listC article:nth-child(4) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p02.jpg);}
+        .listC article:nth-child(5) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p03.jpg);}
+        .listC article:nth-child(6) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p04.jpg);}
+        .listC article:nth-child(7) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p05.jpg);}
+        .listC article:nth-child(8) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p06.jpg);}
+        .listC article:nth-child(9) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p09.jpg);}
+        .listC article:nth-child(10) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p10.jpg);}
+        .listC article:nth-child(11) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p11.jpg);}
+        .listC article:nth-child(12) .photo {background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(../img/p12.jpg);} 
