@@ -3,7 +3,7 @@
 
 ## 공부한 내용
 - Flexible Layout
-  - Flexbox (가운데 정렬, 각 flex item의 비율 설정 등)
+  - Flexbox (`justify-content`, `align-items`를 활용한 반응형 가운데 정렬, `flex`를 활용한 item의 비율 설정 등)
   - Media query (기기별 size 및 breakpoint 설정)
   - `vw`, `vh`, `:root`, `rem`등을 활용
 - Font Awesome
