@@ -8,7 +8,7 @@
   - `vw`, `vh`, `:root`, `rem`등을 활용
 - Font Awesome
 - SNS 공유를 위한 metadata (`<meta property="og:~">`)
-- menu toggle을 위한 간단한 jQuery
+- 간단한 jQuery (`toggleClass`, `fadeToggle`, `slideToggle`등 활용)
 - IE 11 지원
 - Screen Reader 지원을 위한 markup (`.sr-only` class 및 `alt`, `title` attribute의 활용)
 - `iframe`으로 Google Map 띄우기
