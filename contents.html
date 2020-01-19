@@ -47,17 +47,17 @@
     <aside class="listStyle">
         <div class="container">
             <ul>
-                <li><i id="listStyle_1" class="fas fa-th-list"></i></li>
-                <li><i id="listStyle_2" class="fas fa-th-large"></i></li>
-                <li><i id="listStyle_3" class="fas fa-square"></i></li>
+                <li><i id="listStyle_1" class="fas fa-th-list" title="list style A"></i></li>
+                <li><i id="listStyle_2" class="fas fa-th-large" title="list style B"></i></li>
+                <li><i id="listStyle_3" class="fas fa-square" title="list style C"></i></li>
             </ul>
         </div>
     </aside>
-    <section id="list" class="listA">
+    <section id="list" class="listB">
         <div class="container">
             <article>
                 <a href="startLogger.html">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p07.jpg);"><!--style속성을 HTML에 적는 이유는 개요의 수를 늘렸을 때 문장과 함께 이미지를 쉽게 관리할 수 있게 하기 위함.-->
+                    <div class="photo"><!--style속성을 HTML에 적는 이유는 개요의 수를 늘렸을 때 문장과 함께 이미지를 쉽게 관리할 수 있게 하기 위함.-->
                     </div>
                     <div class="text">
                         <h2>라이프로그 시작하기</h2>
@@ -67,7 +67,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p08.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>라이프로그 사용법</h2>
@@ -77,7 +77,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p01.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>꽃테리어</h2>
@@ -87,7 +87,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p02.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>채소 일지</h2>
@@ -97,7 +97,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p03.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>딸기마스터</h2>
@@ -107,7 +107,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p04.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>쌩초보 작곡 배우기</h2>
@@ -117,7 +117,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p05.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>일상속의 예술</h2>
@@ -127,7 +127,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p06.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>식물에 설탕물을 부으면 어떻게 될까?</h2>
@@ -137,7 +137,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p09.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>해외에서 살아남기</h2>
@@ -147,7 +147,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p10.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>인간 드론이 되어보자</h2>
@@ -157,7 +157,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p11.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>경력 5년차 헬린이의 샐러드 제조법</h2>
@@ -167,7 +167,7 @@
             </article>
             <article>
                 <a href="#">
-                    <div class="photo" style="background-image: linear-gradient(rgba(0,0,0,0)30%, rgba(0,0,0,0.9)100%), url(img/p12.jpg);">
+                    <div class="photo">
                     </div>
                     <div class="text">
                         <h2>철판은 이런 것이다.</h2>
@@ -248,6 +248,6 @@
     $('#listStyle_3').click(function() {
         $('#list').removeClass().addClass('listC');
     });
-</script>
+</script>   
 </body>
 </html>
